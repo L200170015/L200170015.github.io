@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L200170015</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container" id="navbar">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li role="presentation"><a href="index.html">HOME</a></li>
+          <li role="presentation"><a href="#about">ABOUT</a></li>
+          <li role="presentation"><a href="#"><i class="glyphicon glyphicon-search"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- jumbotron -->
+  <div id="background">
+    <div class="jumbotron">
+	<h1>Hi !</h1>
+    </div>
+  </div>
+  <!-- jumbotron -->
+
+  <!-- container atas -->
+  <div id="home">
+    <div class="isi">
+      <div class="container atas">
+<h3><a name="TOC-DML---Data-Manipulation-Language"></a><font color="#0B5394">DML - Data Manipulation Language</font></h3>
+<div>DML sendiri adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan <b>mengolah data</b> di dalam table - dan tidak terkait dengan perubahan struktur dan definisi tipe data dari objek database seperti table, column, dan sebagainya.<br />
+<div style="text-align:-webkit-auto"><b><br />
+</b></div>
+<div style="text-align:-webkit-auto"><b><span style="font-weight:normal"><font color="#444444"><b>Contoh DML : </b><span style="font-family:monospace"><b><font face="arial, sans-serif" size="2">Mengambil Seluruh Row Data dari table MS_KARYAWAN</font></b></span></font></span></b></div>
+<div style="text-align:-webkit-auto"><b><span style="font-weight:normal"><span style="font-family:monospace"><b><font face="arial, sans-serif" size="2"><br />
+</font></b></span></span></b></div>
+<div style="text-align:-webkit-auto"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="text-align:-webkit-auto"><font face="monospace" size="3"><span style="font-family:Arial,Verdana,sans-serif;line-height:normal"><span style="font-family:monospace"><font face="arial, sans-serif"><span style="font-family:Courier New"><font color="#0000FF"><span style="color:rgb(24,24,24);font-family:monospace;line-height:18px"><span style="color:rgb(153,0,153)">SELECT</span> <span style="color:rgb(204,0,153)">* </span></span><br />
+</font><span style="font-family:monospace;color:rgb(24,24,24);line-height:18px"><span style="color:rgb(153,0,153)">FROM</span> <span style="color:rgb(0,128,0)">ms<span style="color:rgb(0,128,128)">_</span>karyawan</span></span></span></font></span></span></font></div>
+<div style="text-align:-webkit-auto"></div>
+</div>
+<b>
+<div><b><br />
+</b></div>
+<br />
+</b>
+<div style="text-align:-webkit-auto"><font color="#444444"><b>Contoh DML : </b><span style="font-family:monospace"><b><font face="arial, sans-serif" size="2">Memasukkan data ke dalam tabel ms_karyawan</font></b></span></font></div>
+<div style="text-align:-webkit-auto"><span style="font-family:monospace"><b><font face="arial, sans-serif" size="2"><br />
+</font></b></span></div>
+<div style="text-align:-webkit-auto">
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace" size="3"><span style="color:rgb(24,24,24);line-height:18px"><span style="color:rgb(153,0,153)">INSERT</span> <span style="color:rgb(153,0,153)">INTO</span> <span style="color:rgb(0,128,0)">ms<span style="color:rgb(0,128,128)">_</span>karyawan</span><span style="color:rgb(255,0,255)">(<br />
+<span style="color:rgb(24,24,24)">                <span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>cabang</span><span style="color:rgb(0,0,51)">,<br />
+<span style="color:rgb(24,24,24)">                <span style="color:rgb(0,128,0)">kode<span style="color:rgb(0,128,128)">_</span>karyawan</span><span style="color:rgb(0,0,51)">,<br />
+<span style="color:rgb(24,24,24)">                <span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>depan</span><span style="color:rgb(0,0,51)">,<br />
+<span style="color:rgb(24,24,24)">                <span style="color:rgb(0,128,0)">nama<span style="color:rgb(0,128,128)">_</span>belakang</span><span style="color:rgb(0,0,51)">,<br />
+<span style="color:rgb(24,24,24)">                <span style="color:rgb(0,128,0)">jenis<span style="color:rgb(0,128,128)">_</span>kelamin</span><span style="color:rgb(255,0,255)">)</span> <br />
+<span style="color:rgb(153,0,153)">VALUES</span> <span style="color:rgb(255,0,255)">(</span><span style="color:rgb(0,128,0)">'cab-001'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'kar-001'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Feris'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Thia'</span><span style="color:rgb(0,0,51)">,</span><span style="color:rgb(0,128,0)">'Laki-laki'</span><span style="color:rgb(255,0,255)">)</span><span style="color:rgb(0,0,51)">;</span></span></span></span></span></span></span></span></span></span></span></span></font></div>
+</div>
+<h4 align='left'><a name="TOC-Beberapa-daftar-Perintah-DML-MySQL-5.0"></a><font color="#0B5394">Beberapa daftar Perintah DML MySQL 5.0</font></h4>
+<ul align='left'><li><font face="'courier new', monospace">CALL</font></li>
+<li><font face="'courier new', monospace">DELETE</font></li>
+<li><font face="'courier new', monospace">DO</font></li>
+<li><font face="'courier new', monospace">HANDLER</font></li>
+<li><font face="'courier new', monospace">INSERT</font></li>
+<li><font face="'courier new', monospace">LOAD DATA INFILE</font></li>
+<li><font face="'courier new', monospace">REPLACE</font></li>
+<li><font face="'courier new', monospace">SELECT</font></li>
+<li><font face="'courier new', monospace">TRUNCATE</font></li>
+<li><font face="'courier new', monospace">UPDATE</font></li></ul>
+			</div> 
+        </div>
+      </div>
+    </div>
+  <!-- container atas -->
+<!-- about -->
+  <div id="about">
+    <div class="container footer">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2>About Us</h2>
+        <p>Eko Budi Setiyawan </br>
+		Instagram : eko_ _setyawan</p>
+      </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>Newsletter Subscription</h2>
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" value="Your Email">
+            <div class="input-group-btn">
+              <button class="btn btn-primary" type="submit">Subscribe </button>
+            </div>
+          </div>
+          <div id="icon"><i class="fa fa-instagram"></i><i class="fa fa-facebook-official"></i><i class="fa fa-twitter-square"></i><i class="fa fa-youtube-play"></i></div>
+        </div>
+    </div>
+  </div>
+  <!-- about -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
